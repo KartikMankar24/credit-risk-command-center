@@ -1,0 +1,19 @@
+node_modules/
+
+# SQLite backend DB (487 MB) — only used by the local `node tools/server.mjs`
+# full-data demo. Vercel can't run the Node server, so this never deploys.
+data/crcc.db
+data/crcc.db-wal
+data/crcc.db-shm
+
+# Heavy row shards (326 MB). The live static site runs on preview.json (2 MB)
+# for an instant load. To deploy the FULL 307k dataset instead, delete the line
+# below, re-commit, and push (repo grows to ~330 MB; first visit downloads it all).
+data/rows/
+
+# local screenshots / scratch
+_shots/
+_*.png
+
+*.log
+.DS_Store
