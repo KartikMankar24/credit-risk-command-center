@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Command Center · Credit Risk Platform</title>
+  <meta name="description" content="Enterprise Credit Risk Command Center — internal lending decision & monitoring platform." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+  <!-- Libraries (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <!-- core -->
+  <script src="js/core/format.js"></script>
+  <script src="js/core/store.js"></script>
+  <script src="js/core/cases.js"></script>
+  <!-- data -->
+  <script src="js/data/idb.local.js"></script>
+  <script src="js/data/idb.js"></script>
+  <script src="js/data/loader.js"></script>
+  <!-- ui -->
+  <script src="js/ui/modal.js"></script>
+  <script src="js/ui/shell.js"></script>
+  <!-- charts + modules -->
+  <script src="js/charts/charts.js"></script>
+  <script src="js/modules/ai-underwriter.js"></script>
+  <script src="js/modules/downloads.js"></script>
+  <script src="js/modules/crud.js"></script>
+  <script src="js/modules/casework.js"></script>
+  <script src="js/modules/home.js"></script>
+  <!-- bootstrap -->
+  <script src="js/app.js"></script>
+  <script>App.ready(HomePage);</script>
+</body>
+</html>
